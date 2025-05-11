@@ -2,13 +2,9 @@
 
 A winget wrapper library to make working with the Winget CLI easier.
 
----
-
 ## Documentation
 
 For detailed documentation on the available functions and how to use them, please refer to [docs.md](docs.md).
-
----
 
 ## About
 
@@ -20,19 +16,13 @@ For detailed documentation on the available functions and how to use them, pleas
 - Parse and process Winget CLI outputs.
 - Easy-to-use TypeScript interfaces for better type safety.
 
----
-
 ## Contribute
 
 We welcome contributions! Please check out our [CONTRIBUTE](CONTRIBUTE.md) file for guidelines on how to get started.
 
----
-
 ## Maintainer
 
 - **Dominik Biedebach** ([GitHub](https://github.com/bdbch))
-
----
 
 ## License
 
