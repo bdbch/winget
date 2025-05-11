@@ -32,16 +32,16 @@ export function listByQuery(
     command.push(`--query "${query}"`);
   }
 
+  if (options?.tag) {
+    command.push(`--tag "${options.tag}"`);
+  }
+
   if (options?.count) {
     command.push(`--count "${options.count.toString()}"`);
   }
 
   if (options?.source) {
     command.push(`--source "${options.source}"`);
-  }
-
-  if (options?.tag) {
-    command.push(`--tag "${options.tag}"`);
   }
 
   return new Promise<WingetListOutput[]>((resolve, reject) => {
