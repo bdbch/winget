@@ -30,7 +30,7 @@
     "coverage": "vitest coverage ./src",
     "format": "biome format ./src --write",
     "lint": "biome lint ./src",
-    "version": "npx version"
+    "version": "npx changeset"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
