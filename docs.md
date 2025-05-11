@@ -72,4 +72,18 @@ findOffsetsFromHeaderLine(line: string): Array<{ from: number; to: number; end: 
 
 ---
 
+### `listByQuery`
+
+```typescript
+listByQuery(query?: string): Promise<WingetListOutput[]>
+```
+
+**Description**: Lists installed packages using the Winget CLI and parses the output.
+
+**Returns**: A promise that resolves to an array of Winget list results.
+
+**Throws**: An error if the Winget CLI command fails.
+
+---
+
 For more details, refer to the source code or contact the maintainer.
