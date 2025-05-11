@@ -12,7 +12,10 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "CONTRIBUTE.md",
+    "LICENSE",
+    "docs.md"
   ],
   "author": {
     "name": "Dominik Biedebach",
