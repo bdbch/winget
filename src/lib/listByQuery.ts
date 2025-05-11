@@ -33,7 +33,7 @@ export function listByQuery(
   }
 
   if (options?.count) {
-    command.push(`--count "${options.count}"`);
+    command.push(`--count "${options.count.toString()}"`);
   }
 
   if (options?.source) {
