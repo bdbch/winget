@@ -9,7 +9,7 @@ This document provides an overview of the functions available in the `@bdbchgg/w
 ### `searchByQuery`
 
 ```typescript
-searchByQuery(query: string): Promise<WingetSearchOutput[]>
+searchByQuery(query: string, options?: SearchByQueryOptions): Promise<WingetSearchOutput[]>
 ```
 
 **Description**: Searches for packages using the Winget CLI based on a query string.
@@ -17,6 +17,10 @@ searchByQuery(query: string): Promise<WingetSearchOutput[]>
 **Parameters**:
 
 - `query` (string): The search query string.
+- `options` (object, optional):
+  - `tag` (string, optional): The tag to filter by.
+  - `count` (number, optional): How many packages should be returned.
+  - `source` (string, optional): The source the package should be looked in.
 
 **Returns**: A promise that resolves to an array of Winget search results.
 
@@ -75,10 +79,18 @@ findOffsetsFromHeaderLine(line: string): Array<{ from: number; to: number; end: 
 ### `listByQuery`
 
 ```typescript
-listByQuery(query?: string): Promise<WingetListOutput[]>
+listByQuery(query?: string, options?: ListByQueryOptions): Promise<WingetListOutput[]>
 ```
 
 **Description**: Lists installed packages using the Winget CLI and parses the output.
+
+**Parameters**:
+
+- `query` (string, optional): An optional query to filter the list of packages.
+- `options` (object, optional):
+  - `tag` (string, optional): The tag to filter by.
+  - `count` (number, optional): How many packages should be returned.
+  - `source` (string, optional): The source of the package.
 
 **Returns**: A promise that resolves to an array of Winget list results.
 
