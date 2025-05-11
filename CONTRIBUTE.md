@@ -7,7 +7,7 @@ Thank you for considering contributing to this project! We welcome all kinds of 
 1. **Fork the Repository**: Start by forking the repository to your GitHub account.
 2. **Clone the Repository**: Clone your forked repository to your local machine.
    ```bash
-   git clone https://github.com/your-username/winget-js.git
+   git clone https://github.com/bbdbch/winget.git
    ```
 3. **Create a Branch**: Create a new branch for your feature or bug fix.
    ```bash
